@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: 'Arial', sans-serif;
+    background-color: #fffffe;
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #46b44d;
+    color: #f1f1f1;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar button {
+    width: 80px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #145ce1;
+    color: #f1f1f1;
+    border-radius: 18px;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar button:hover {
+    background-color: #b88d00; /* Light Green for hover */
+  }
+
+  .navbar .logo {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;  /* Adjust the height of your logo */
+    margin-right: 20px;  /* Space between logo and buttons */
+    justify-self: start;
+}
+  #content {
+    padding: 3rem 1.5rem;
+    background-color: #f0f8ff;
+    text-align: center;
+  }
+  
+  #content h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #121212;
+  }
+  /* Main Container */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f1f1; /* Soft background color */
+    font-family: 'Poppins', sans-serif; /* Modern font */
+}
+
+/* Restaurant Name */
+.restaurant-name {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #e63946; /* Eye-catching red */
+}
+
+/* Hero Image */
+.hero-image {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+/* Tagline */
+.tagline {
+    font-size: 1.5rem;
+    color: #2a9d8f; /* Fresh green */
+    margin-bottom: 20px;
+}
+
+/* Call to Action Button */
+.cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #e63946;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #d62828;
+    transform: scale(1.05);
+}
+
+.cta-button:active {
+    transform: scale(1);
+}
+
+  .contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(173, 216, 230, 0.2);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  #content form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  #content form input, #content form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #content form textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+  
+  #content form button {
+    padding: 0.75rem 1.5rem;
+    background-color: #4682B4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #content form button:hover {
+    background-color: #00b894;
+  }
+  
+  button:hover, button:focus, button:active {
+    background-color: #006666;
+    outline: none;
+  }
+  
+  .contact-container {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-in-out;
+  }
+  
+  .contact-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .menu-item {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .menu-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .menu-item .price {
+    font-size: 1.2rem;
+    color: #4682B4;
+    font-weight: bold;
+  }
